@@ -22,7 +22,7 @@ for index, row in df.iterrows():
     box_width = (x1 - x0) / width
     box_height = (y1 - y0) / height
 
-    with open('face_yolo_dataset/'+image_name[:-4]+'.txt', 'a+') as f:
+    with open('faceDataset/labels/'+image_name[:-4]+'.txt', 'a+') as f:
         f.write(f"1 {x_center} {y_center} {box_width} {box_height}\n")
 
 # 0: masked, 1:not masked
