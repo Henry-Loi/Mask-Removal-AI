@@ -4,7 +4,7 @@ import cv2
 
 class Prediction:
     def __init__(self):
-        self. model = YOLO("./runs/detect/train3/weights/best.pt") 
+        self. model = YOLO("./runs/detect/train8/weights/best.pt") 
 
     def predict(self, image):
         return self.model.predict(image,verbose=False)

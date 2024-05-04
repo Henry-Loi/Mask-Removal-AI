@@ -8,7 +8,7 @@ import os
 # dataset: https://universe.roboflow.com/jonathan-chandra/face-mask-object-detection
 
 # Load a model
-model = YOLO("yolov8n.pt")  # load a pretrained model 
-
+# model = YOLO("yolov8n.pt")  # load a pretrained model 
+model = YOLO("./runs/detect/train7/weights/best.pt") 
 # Train the model
-results = model.train(data="./datasets/data.yaml", batch=8, epochs=1, plots=True)
+results = model.train(data="./datasets/data.yaml", batch=8, epochs=1, plots=True, workers = 4)

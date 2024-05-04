@@ -162,5 +162,5 @@ cython_debug/
 *.whl
 *.dat
 
-faceDataset/
+faceDataset/images/
 datasets/
