@@ -25,3 +25,20 @@ i trained the yolo model with `face_detection.py` for 8 epochs (i found that i f
 #### detect.py
 to see the result, run `detect.py` 
 >need to change the model and image inside
+
+
+> note:
+> i put:
+> `00000xxx.jpg` `00000xxx_modified.jpg` to `test`
+> `00001xxx.jpg` `00002xxx.jpg` `00001xxx_modified.jpg` `00002xxx_modified.jpg` to `train`
+> `00003xxx.jpg` `00003xxx_modified.jpg` to `valid`
+> for better training since `train11`
+> rip 30 minute a epoch on my labtop
+
+> how to use colab to train?
+
+## TODO
+- pass family photo to `detect.py`
+- if `masked`, do similarity checker with other photos provided by user
+- image registration inside each bounding boxes (similar to how i add face masks in `add_face_mask.py`?)
+- output final image
