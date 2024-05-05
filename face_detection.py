@@ -9,6 +9,6 @@ import os
 
 # Load a model
 # model = YOLO("yolov8n.pt")  # load a pretrained model 
-model = YOLO("./runs/detect/train11/weights/best.pt") 
+model = YOLO("./runs/detect/train12/weights/best.pt") 
 # Train the model
-results = model.train(data="./datasets/data.yaml", batch=8, epochs=20, plots=True, workers = 4)
+results = model.train(data="./datasets/data.yaml", batch=8, epochs=15, plots=True, workers = 4)
